@@ -163,8 +163,7 @@ void UdpServer::send() {
           is_cong_avd_ = true;
           is_slow_start_ = false;
 
-          cwnd_ = 1;
-          ssthresh_ = 64;
+      
         }
 
         if (sliding_window_->last_acked_packet_ ==
